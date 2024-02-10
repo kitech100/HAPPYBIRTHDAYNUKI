@@ -14,7 +14,7 @@
 <body class="container">
   <!-- Pembuat code: https://codepen.io/mdusmanansari/pen/BamepLe -->
   <div class="night"></div>
-  <audio id="myAudio" controls style="display: block; top: 0; position: absolute;">
+  <audio id="myAudio" controls style="display: none; top: 0; position: absolute;">
     <source src="mario.m4a" type="audio/mp3">
     Your browser does not support the audio tag.
   </audio>
@@ -319,14 +319,10 @@
   <script>
     onload = () => {
       document.body.classList.remove("container");
+      setTimeout(() => {
+        $("#myAudio")[0].play();
+      }, 2000);
     };
-
-    // $(document).ready(function () {
-    //   console.log($("#myAudio"));
-    //   $("#myAudio")[0].play();
-    // });
-
-
   </script>
 </body>
 

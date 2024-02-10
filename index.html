@@ -37,22 +37,20 @@
     </div>
     </div>
     <div class="button" style="display: flex; gap: 2rem;">
-        <button style="display: none" id="redirectFlower">
-            <a href="flower.html">ACCEPT</a>
-        </button>
         <!-- <button id="acceptBtn">ACCEPT</button> -->
-        <button id="openModalBtn">ACCEPT</button>
-
-        <button id="denyBtn">DENY</button>
+        <button style="display: none" id="redirectFlower"><a href="flower.html"></a></button>
+        <button id="openModalBtn" class="button-33" role="button">ACCEPT</button>
+        <button id="denyBtn" class="button-34" role="button">DENY</button>
 
     </div>
     <div id="myModal" class="modal">
         <div class="modal-content">
+            <span id="promptMSG" style="font-color: red"></span><br>
             <span class="close" id="closeModalBtn">&times;</span>
-            <label for="input-password">Password</label>
-            <input type="password" id="inputPassword"></input>
-            <button id="confirmPassword">Confirm</button>
-            <span id="promptMSG" style="font-color: red"></span>
+            <label for="input-password">Password</label><br>
+            <input type="password" id="inputPassword" style="margin-bottom: 10px;"></input>
+            <button id="confirmPassword" class="button-33">Confirm</button>
+
         </div>
     </div>
 </body>
