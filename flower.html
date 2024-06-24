@@ -15,9 +15,12 @@
   <!-- Pembuat code: https://codepen.io/mdusmanansari/pen/BamepLe -->
   <div class="night"></div>
   <audio id="myAudio" controls style="display: none; top: 0; position: absolute;">
-    <source src="mario.m4a" type="audio/mp3">
-    Your browser does not support the audio tag.
+    <source src="butful.m4a" type="audio/mp3">
+   
   </audio>
+  <div class="image-container" style="position: absolute; top: 50px; z-index: 99999;">
+    <img src="/img/nuki.png" alt="Image" style="width: 400px; height: 400px;" class="responsive-image">
+  </div>
   <div class="flowers">
     <div class="flower flower--1">
       <div class="flower__leafs flower__leafs--1">
@@ -314,6 +317,30 @@
       </div>
     </div>
   </div>
+
+  <div style="position: absolute; bottom: 0px; left: 10px; font-style: italic;">MADE BY: TOBY</div>
+
+  <style>
+    /* Default image styles */
+    /* .responsive-image {
+      width: 100px;
+      height: 100px;
+    } */
+
+    /* Media query for larger screens */
+    @media (min-width: 1024px) {
+      .image-container {
+        position: absolute;
+        right: 70px;
+        top: 70px;
+      }
+
+      .responsive-image {
+        width: 700px;
+        height: 700px;
+      }
+    }
+  </style>
 
   <!-- <script src="main.js"></script> -->
   <script>
