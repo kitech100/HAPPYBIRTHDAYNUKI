@@ -3,7 +3,7 @@
 // };
 
 $(document).ready(function () {
-    let password = "iloveyounikkiee";
+    let password = "iloveyoukaz062505";
 
     $("#denyBtn").click(function () {
         $(this).addClass("random-position");
