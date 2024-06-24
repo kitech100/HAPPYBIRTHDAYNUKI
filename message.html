@@ -2,10 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TO KAZ FROM TOBY</title>
+    <title>FROM: TOBY</title>
+    <link rel="stylesheet" href="./message.css">
 </head>
 <body>
-    <div></div>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Dear Kim!</strong>
+                        <p>
+                            Happy Birthday, Bebe! 💖🎉
+
+                            Happy Birthday, my Love of my Life! Each day with you is a gift I cherish deeply. Your smile lights up my world, and your laughter is my favorite sound. Today, I celebrate you and the wonderful person you are.
+
+                            Thank you for filling my life with love and happiness. You mean everything to me, and I'm grateful for every moment we share. Here's to many more birthdays together, creating beautiful memories and celebrating our love.
+                            
+                            I LOVE YOU FOREVER BEBE/MOMMY/BABY! 💖🎂🥳
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
 </body>
 </html>
